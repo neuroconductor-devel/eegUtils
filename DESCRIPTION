@@ -1,70 +1,43 @@
 Package: eegUtils
 Type: Package
-Title: Utilities for Electroencephalographic (EEG) Analysis 
+Title: Utilities for Electroencephalographic (EEG) Analysis
 Version: 0.8.0
 Date: 2024-10-22
-Authors@R: c(
-  person("Matt", "Craddock", role = c("aut", "cre"), email = "matt@mattcraddock.com"),
-  person("Matti", "Vuorre", role = "ctb", email = "mv2521@columbia.edu"),
-  person("ggplot2 authors", role = c("cph"), comment = "Routines borrowed from ggplot2 to allow contours to be drawn on topoplots"))
+Authors@R: c( person("Matt", "Craddock", role = c("aut", "cre"), email
+        = "matt@mattcraddock.com"), person("Matti", "Vuorre", role =
+        "ctb", email = "mv2521@columbia.edu"), person("ggplot2
+        authors", role = c("cph"), comment = "Routines borrowed from
+        ggplot2 to allow contours to be drawn on topoplots"))
 Maintainer: Matt Craddock <matt@mattcraddock.com>
-Description: Electroencephalography data processing and visualization tools. Includes import
-  functions for 'BioSemi' (.BDF), 'Neuroscan' (.CNT), 'Brain Vision Analyzer' (.VHDR),
-  'EEGLAB' (.set) and 'Fieldtrip' (.mat). Many preprocessing functions such as
-  referencing, epoching, filtering, and ICA are available. There are a variety 
-  of visualizations possible, including timecourse and topographical plotting.
+Description: Electroencephalography data processing and visualization
+        tools. Includes import functions for 'BioSemi' (.BDF),
+        'Neuroscan' (.CNT), 'Brain Vision Analyzer' (.VHDR), 'EEGLAB'
+        (.set) and 'Fieldtrip' (.mat). Many preprocessing functions
+        such as referencing, epoching, filtering, and ICA are
+        available. There are a variety of visualizations possible,
+        including timecourse and topographical plotting.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports:
-    ggplot2 (>= 3.4.0),
-    dplyr (>= 1.0.0),
-    scales,
-    purrr,
-    shiny (>= 1.6.0),
-    tidyr (>= 1.0.0),
-    miniUI,
-    rlang (>= 1.0.0),
-    MASS,
-    signal,
-    tibble,
-    stats,
-    matrixStats,
-    abind,
-    plotly,
-    future.apply,
-    Rcpp,
-    data.table,
-    isoband,
-    bslib
-Depends:
-  R (>= 4.0.0)
+Imports: ggplot2 (>= 3.4.0), dplyr (>= 1.0.0), scales, purrr, shiny (>=
+        1.6.0), tidyr (>= 1.0.0), miniUI, rlang (>= 1.0.0), MASS,
+        signal, tibble, stats, matrixStats, abind, plotly,
+        future.apply, Rcpp, data.table, isoband, bslib
+Depends: R (>= 4.0.0)
 RoxygenNote: 7.3.2
-Suggests: 
-    testthat,
-    vdiffr,
-    covr,
-    knitr,
-    rmarkdown,
-    JADE,
-    ica,
-    geigen,
-    fICA,
-    edfReader,
-    ini,
-    R.matlab,
-    hdf5r,
-    mgcv,
-    infomax (>= 0.1.0),
-    Hmisc
-URL: https://github.com/craddm/eegUtils, https://craddm.github.io/eegUtils, https://craddm.github.io/eegUtils/
+Suggests: testthat, vdiffr, covr, knitr, rmarkdown, JADE, ica, geigen,
+        fICA, edfReader, ini, R.matlab, hdf5r, mgcv, infomax (>=
+        0.1.0), Hmisc
+URL: https://github.com/craddm/eegUtils,
+        https://craddm.github.io/eegUtils,
+        https://craddm.github.io/eegUtils/
 BugReports: https://github.com/craddm/eegUtils/issues
 Config/testthat/edition: 3
 Config/testthat/parallel: true
 VignetteBuilder: knitr
-LinkingTo: 
-    Rcpp,
-    RcppArmadillo
+LinkingTo: Rcpp, RcppArmadillo
 Roxygen: list(markdown = TRUE)
-Remotes: 
+Repository: Neuroconductor-Devel
+Remotes:  
     eegverse/infomax
+biocViews: 
