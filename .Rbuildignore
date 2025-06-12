@@ -17,3 +17,7 @@
 ^CITATION\.cff$
 ^vignettes/single_subj_N170$
 ^pkgdown$
+^DESCRIPTION\.bak$
+^autoci\.yml$
+^autoci_pkgdown\.yml$
+^tic\.R$
